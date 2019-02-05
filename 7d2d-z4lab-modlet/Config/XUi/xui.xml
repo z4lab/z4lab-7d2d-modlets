@@ -1,0 +1,27 @@
+ <configs>
+ 	<!-- forge with 3 input slots -->
+	<set xpath="xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">S420windowForgeInput</set>
+	<!-- compass -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='compass']/window[@name='windowCompass']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+		<window name="S420windowCompass" /> 
+	</append>
+	<!-- UI left and right from toolbelt -->
+	<append xpath="/xui/ruleset/window_group[@name='toolbelt']">
+		<window name="rightSideHUD" />
+		<window name="pzLeftBars" />
+		<window name="S420ActiveBuffsWindow" anchor="LeftBottom" />
+	</append>
+	<!-- Wall Oven -->
+	<append xpath="/xui/ruleset">
+		<window_group name="workstation_Wall Oven" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</append>
+</configs>

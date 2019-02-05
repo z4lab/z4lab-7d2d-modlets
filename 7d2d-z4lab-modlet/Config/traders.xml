@@ -1,0 +1,7 @@
+<configs>
+	<!-- xml fix for broken quality stuff -->
+	<set xpath="/traders/@quality_mod">1,6</set>
+	<!-- Better pricing (default value "2" and "0.2") -->
+	<set xpath="/traders/@buy_markup">1.5</set> 
+	<set xpath="/traders/@sell_markdown">0.15</set>
+</configs>

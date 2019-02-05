@@ -1,0 +1,10 @@
+<configs>
+	<!-- replaces vultures with soliders, due to server performance -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieVulture']/@name">zombieSoldier</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieVultureRadiated']/@name">zombieSoldier</set>
+	
+	<!-- reduce vultre spawn rate
+	<set xpath="/entitygroups/entitygroup/entity[@name='animalZombieVulture']/@prob">0.1</set>
+	<set xpath="/entitygroups/entitygroup/entity[@name='animalZombieVultureRadiated']/@prob">0.1</set>
+	-->
+</configs>

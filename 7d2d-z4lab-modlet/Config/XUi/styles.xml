@@ -1,0 +1,4 @@
+<configs>
+	<!-- toolbelt color active item -->
+	<set xpath="/styles/style[@name='itemStack']/style_entry[@name='holding_color']/@value"> [red] </set>
+</configs>
