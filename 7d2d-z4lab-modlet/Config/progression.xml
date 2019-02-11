@@ -6,11 +6,13 @@
 	<remove xpath="/progression/perks/perk[@name='perkHammerForge']" />
 	<remove xpath="/progression/perks/perk[@name='perkGreaseMonkey']" />
 	<remove xpath="/progression/perks/perk[@name='perkAdvancedEngineering']" />
-	<!-- more points per level and quicker leveling up -->
+	<!-- more points per level but slower leveling up -->
 	<set xpath="/progression/level/@skill_points_per_level">2</set>
-	<set xpath="/progression/level/@exp_to_level">9545</set>
-	<!-- reduced points scaling for level requirements -->
-	<set xpath="/progression/attributes/@cost_multiplier_per_level">1.18</set>	
+	<set xpath="/progression/level/@exp_to_level">12000</set>
+	<set xpath="/progression/level/@experience_multiplier">1.03</set>
+	<!-- reduced points scaling for level requirements 
+	<set xpath="/progression/attributes/@cost_multiplier_per_level">1.18</set>
+	-->
 	<!-- Add perks back minus player level gates -->
 	<append xpath="/progression/perks">
 		<perk name="perkHammerForge" parent="skillCraftsmanship" max_level="5" name_key="perkHammerForgeName" desc_key="perkHammerForgeDesc" icon="ui_game_symbol_forge">

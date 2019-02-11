@@ -37,10 +37,10 @@
 	<append xpath="/items/item[@name='shades']/effect_group">
 		<passive_effect name="CraftingTier" operation="base_add" value="1"/>
 		<passive_effect name="CraftingTime" operation="perc_add" value="-.1"/>
-		<passive_effect name="PlayerExpGain" operation="perc_add" value=".2" />
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".15" />
 		<display_value name="dCraftingTier" value="1"/>
 		<display_value name="dCraftingTime" value="-.1"/>
-		<display_value name="dPlayerExpGain" value=".2"/>
+		<display_value name="dPlayerExpGain" value=".15"/>
 	</append>
 	<!-- disable crosshair on aimed sight -->
 	<set xpath="/items/item[@name='gunPistol']/property[@name='CrosshairOnAim']/@value">false</set>

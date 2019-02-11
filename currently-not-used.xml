@@ -1,0 +1,28 @@
+<entityclasses>
+	<!-- animalStag - default harvest = 30 -->
+	<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">35</set>
+	<!-- animalDoe - default harvest = 20 -->
+	<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">30</set>
+	<!-- animalRabbit - default harvest = 10 -->
+	<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">10</set>
+	<!-- animalChicken - default harvest = 10 -->
+	<set xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">10</set>
+	<!-- animalBear - default harvest = 50 -->
+	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">60</set>
+	<!-- animalWolf - default harvest = 25 -->
+	<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">35</set>
+	<!-- animalSnake - default harvest = 10 -->
+	<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">10</set>
+	<!-- animalBoar - default harvest = 30 -->
+	<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">40</set>
+	<!-- animalDireWolf - default harvest = 35 -->
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">45</set>
+	<!-- animalBossGrace - default harvest = 100 -->
+	<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='foodRawMeat'][@tag='butcherHarvest']/@count">110</set>
+	<!-- animalZombieBear - default harvest = 7 -->
+	<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='foodRottingFlesh'][@tag='butcherHarvest']/@count">35</set>
+	<!-- animalZombieVulture - default harvest = 3 -->
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@name='foodRottingFlesh'][@tag='butcherHarvest']/@count">1</set>
+	<!-- animalZombieDog - default harvest = 4 -->
+	<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='foodRottingFlesh'][@tag='butcherHarvest']/@count">8</set>
+</entityclasses>
