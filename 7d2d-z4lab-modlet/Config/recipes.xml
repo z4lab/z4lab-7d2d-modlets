@@ -61,7 +61,4 @@
      		<ingredient name="resourceForgedIron" count="15"/>
 		</recipe>
 	</append>
-	<!-- change required meat for cooking -->
-	<set xpath="/recipes/recipe/ingredient[@name='foodRawMeat' and @count='5']/@count">4</set>
-	<set xpath="/recipes/recipe/ingredient[@name='foodRawMeat' and @count='10']/@count">8</set>	
 </configs>

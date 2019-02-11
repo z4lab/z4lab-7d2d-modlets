@@ -2,44 +2,50 @@
 	<!-- change shotgun "magazinesize" and "Degradation/Durability" -->
 	<set xpath="/items/item[@name='gunPumpShotgun']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">13</set>
 	<append xpath="/items/item[starts-with(@name, 'gunPumpShotgun')]/effect_group[@name='Base Effects']">
-			<passive_effect name="DegradationMax" operation="base_set" value="4500,22000" tier="1,6"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="4200,22000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="2"/>
 			<passive_effect name="ModSlots" operation="base_set" value="1,6" tier="1,6"/>
 	</append>
 	<!-- change sniper "magazinesize" and "Degradation/Durability" -->
 	<set xpath="/items/item[@name='gunMR10']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">15</set>
 	<append xpath="/items/item[starts-with(@name, 'gunMR10')]/effect_group[@name='Base Effects']">
-			<passive_effect name="DegradationMax" operation="base_set" value="8400,64000" tier="1,6"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="4200,22000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="2"/>	
 			<passive_effect name="ModSlots" operation="base_set" value="1,6" tier="1,6"/>
 	</append>
 	<!-- change ak47 "magazinesize" and "Degradation/Durability" -->
 	<set xpath="/items/item[@name='gunAK47']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">32</set>
 	<append xpath="/items/item[starts-with(@name, 'gunAK47')]/effect_group[@name='Base Effects']">
-			<passive_effect name="DegradationMax" operation="base_set" value="8400,64000" tier="1,6"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="4200,22000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="2"/>
 			<passive_effect name="ModSlots" operation="base_set" value="1,6" tier="1,6"/>
 	</append>
 	<!-- change mp5 "magazinesize" and "Degradation/Durability" -->
 	<set xpath="/items/item[@name='gunSMG5']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">32</set>
 	<append xpath="/items/item[starts-with(@name, 'gunSMG5')]/effect_group[@name='Base Effects']">
-			<passive_effect name="DegradationMax" operation="base_set" value="8400,64000" tier="1,6"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="4200,22000" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="2"/>	
+			<passive_effect name="ModSlots" operation="base_set" value="1,6" tier="1,6"/>
+	</append>
+	<!-- change pistol "magazinesize" and "Degradation/Durability" -->
+	<set xpath="/items/item[@name='gunPistol']/effect_group[@name='Base Effects']/passive_effect[@name='MagazineSize']/@value">16</set>
+	<append xpath="/items/item[starts-with(@name, 'gunPistol')]/effect_group[@name='Base Effects']">
+			<passive_effect name="DegradationMax" operation="base_set" value="4200,12000" tier="1,6"/>
 			<passive_effect name="DegradationPerUse" operation="base_set" value="2"/>	
 			<passive_effect name="ModSlots" operation="base_set" value="1,6" tier="1,6"/>
 	</append>
 	<!-- change machete "damage", "range" and "Degradation/Durability" -->
 	<append xpath="/items/item[starts-with(@name, 'meleeToolMachete')]/effect_group[@name='Base Effects']">
-			<passive_effect name="DegradationMax" operation="base_set" value="1200,5800" tier="1,6"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="1200,4200" tier="1,6"/>
 			<passive_effect name="EntityDamage" operation="base_set" value="32"/>
 			<passive_effect name="MaxRange" operation="base_set" value="2.8"/>
 	</append>
 	<!-- change effect of shades -->
 	<append xpath="/items/item[@name='shades']/effect_group">
-		<passive_effect name="CraftingTier" operation="base_add" value="1"/>
-		<passive_effect name="CraftingTime" operation="perc_add" value="-.1"/>
 		<passive_effect name="PlayerExpGain" operation="perc_add" value=".15" />
-		<display_value name="dCraftingTier" value="1"/>
-		<display_value name="dCraftingTime" value="-.1"/>
+		<!-- test stuff for max HP/stamina -->
+		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
 		<display_value name="dPlayerExpGain" value=".15"/>
 	</append>
 	<!-- disable crosshair on aimed sight -->
@@ -55,8 +61,6 @@
 	<set xpath="/items/item[@name='gunWoodenBow']/property[@name='CrosshairOnAim']/@value">true</set>
 	<set xpath="/items/item[@name='gunCompoundBow']/property[@name='CrosshairOnAim']/@value">false</set>
 	<set xpath="/items/item[@name='gunCrossbow']/property[@name='CrosshairOnAim']/@value">false</set>
-	<set xpath="/items/item[@name='gunToolDiggerAdmin']/property[@name='CrosshairOnAim']/@value">true</set>
-	<set xpath="/items/item[@name='gunPistolAdmin']/property[@name='CrosshairOnAim']/@value">true</set>
 	<!-- Change damage, degredation use, and attacksperminute based on quality -->
 	<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='EntityDamage'][@operation='perc_add']"/>
 	<remove xpath="/items/item/effect_group[@name='Base Effects']/passive_effect[@name='BlockDamage'][@operation='perc_add']"/>
@@ -182,17 +186,17 @@
 	<set xpath="/items/item[@name='gunToolNailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail,resourceSteelPolish</set>
 	<set xpath="/items/item[@name='meleeToolClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,resourceYuccaFibers,resourceNail,resourceSteelPolish</set>
 	<!-- stack size changes -->
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='20000']/@value">19500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='20000']/@value">24000</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='6000']/@value">12000</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='1200']/@value">2500</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='1000']/@value">2500</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">2500</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='250']/@value">600</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='128']/@value">400</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">300</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1200']/@value">2400</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1000']/@value">2400</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">1500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='250']/@value">500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='128']/@value">250</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">200</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='40']/@value">100</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='15']/@value">100</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">30</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">50</set>
 	<!-- Water from faucet -->
 	<append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
 		<property name="Focused_blockname_6" value="Faucet Small"/>

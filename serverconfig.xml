@@ -84,8 +84,8 @@
 	<property name="ZombieMoveNight"				value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
 	<property name="ZombieFeralMove"				value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
 	<property name="ZombieBMMove"					value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
-	<property name="BloodMoonFrequency"				value="7" />				<!-- What frequency (in days) should a blood moon take place -->
-	<property name="BloodMoonRange"					value="0" />				<!-- How many days can the actual blood moon day randomly deviate from the above setting. Setting this to 0 makes blood moons happen exactly each Nth day as specified in BloodMoonFrequency -->
+	<property name="BloodMoonFrequency"				value="12" />				<!-- What frequency (in days) should a blood moon take place -->
+	<property name="BloodMoonRange"					value="4" />				<!-- How many days can the actual blood moon day randomly deviate from the above setting. Setting this to 0 makes blood moons happen exactly each Nth day as specified in BloodMoonFrequency -->
 	<property name="BloodMoonEnemyCount"			value="14" />				<!-- The number of zombies spawned during blood moons per player. -->
 
 	<!-- Loot -->

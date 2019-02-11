@@ -10,9 +10,6 @@
 	<set xpath="/progression/level/@skill_points_per_level">2</set>
 	<set xpath="/progression/level/@exp_to_level">12000</set>
 	<set xpath="/progression/level/@experience_multiplier">1.03</set>
-	<!-- reduced points scaling for level requirements 
-	<set xpath="/progression/attributes/@cost_multiplier_per_level">1.18</set>
-	-->
 	<!-- Add perks back minus player level gates -->
 	<append xpath="/progression/perks">
 		<perk name="perkHammerForge" parent="skillCraftsmanship" max_level="5" name_key="perkHammerForgeName" desc_key="perkHammerForgeDesc" icon="ui_game_symbol_forge">
@@ -76,5 +73,17 @@
 				<effect_description level="5" desc_key="perkAdvancedEngineeringRank5Desc"/>
 			</effect_group>
 		</perk>
+
+		<attribute name="attFortitude" name_key="attFortitudeName" desc_key="attFortitudeDesc" icon="ui_game_symbol_add">
+			<effect_group>
+				<passive_effect name="HealthMax" operation="base_set" value="250" level="11"/>
+				<passive_effect name="WaterMax" operation="base_set" value="250" level="11"/>
+			</effect_group>
+		</attribute>
+		<attribute name="attAgility" name_key="attAgilityName" desc_key="attAgilityDesc" icon="ui_game_symbol_agility">
+			<effect_group>
+				<passive_effect name="StaminaMax" operation="base_set" value="250" level="11"/>
+			</effect_group>
+		</attribute>
 	</append>
 </configs>
