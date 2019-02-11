@@ -4,7 +4,7 @@
 
 	<!-- Server representation -->
 	<property name="ServerName"						value="z4lab 7D2D Server"/>		<!-- Whatever you want the name of the server to be. -->
-	<property name="ServerDescription"				value="z4lab 7D2D Private Server"/>	<!-- Whatever you want the server description to be, will be shown in the server browser. -->
+	<property name="ServerDescription"				value="z4lav 7D2D Private Server"/>	<!-- Whatever you want the server description to be, will be shown in the server browser. -->
 	<property name="ServerWebsiteURL"				value="https://z4lab.com"/>					<!-- Website URL for the server, will be shown in the serverbrowser as a clickable link -->
 	<property name="ServerPassword"					value="XXX"/>					<!-- Password to gain entry to the server -->
 	<property name="ServerLoginConfirmationText"	value="" />					<!-- If set the user will see the message during joining the server and has to confirm it before continuing. For more complex changes to this window you can change the "serverjoinrulesdialog" window in XUi -->
@@ -15,10 +15,10 @@
 	<property name="ServerDisabledNetworkProtocols"	value="SteamNetworking"/>	<!-- Networking protocols that should not be used. Separated by comma. Possible values: LiteNetLib, SteamNetworking. Dedicated servers should disable SteamNetworking if there is no NAT router in between your users and the server or when port-forwarding is set up correctly -->
 
 	<!-- Slots -->
-	<property name="ServerMaxPlayerCount"			value="4"/>					<!-- Maximum Concurrent Players -->
+	<property name="ServerMaxPlayerCount"			value="6"/>					<!-- Maximum Concurrent Players -->
 	<property name="ServerReservedSlots"			value="0"/>					<!-- Out of the MaxPlayerCount this many slots can only be used by players with a specific permission level -->
 	<property name="ServerReservedSlotsPermission"	value="100"/>				<!-- Required permission level to use reserved slots above -->
-	<property name="ServerAdminSlots"				value="0"/>					<!-- This many admins can still join even if the server has reached MaxPlayerCount -->
+	<property name="ServerAdminSlots"				value="1"/>					<!-- This many admins can still join even if the server has reached MaxPlayerCount -->
 	<property name="ServerAdminSlotsPermission"		value="0"/>					<!-- Required permission level to use the admin slots above -->
 
 	<!-- Admin interfaces -->
@@ -29,19 +29,19 @@
 	<property name="TelnetEnabled"					value="false"/>				<!-- Enable/Disable the telnet -->
 	<property name="TelnetPort"						value="8081"/>				<!-- Port of the telnet server -->
 	<property name="TelnetPassword"					value=""/>					<!-- Password to gain entry to telnet interface. If no password is set the server will only listen on the local loopback interface -->
-	<property name="TelnetFailedLoginLimit"			value="10"/>				<!-- After this many wrong passwords from a single remote client the client will be blocked from connecting to the Telnet interface -->
-	<property name="TelnetFailedLoginsBlocktime"	value="10"/>				<!-- How long will the block persist (in seconds) -->
+	<property name="TelnetFailedLoginLimit"			value="3"/>				<!-- After this many wrong passwords from a single remote client the client will be blocked from connecting to the Telnet interface -->
+	<property name="TelnetFailedLoginsBlocktime"	value="30"/>				<!-- How long will the block persist (in seconds) -->
 
 	<property name="TerminalWindowEnabled"			value="false"/>				<!-- Show a terminal window for log output / command input (Windows only) -->
 
 	<!-- Folder and file locations -->
 	<property name="AdminFileName"					value="serveradmin.xml"/>	<!-- Server admin file name. Path relative to the SaveGameFolder -->
 	<property name="UserDataFolder"					value="XXX" />	<!-- Use this to override where the server stores all generated data, including RWG generated worlds. Do not forget to uncomment the entry! -->
-	<!-- <property name="SaveGameFolder"				value="absolute path" /> -->	<!-- Use this to only override the save game path. Do not forget to uncomment the entry! -->
+	<property name="SaveGameFolder"					value="XXX" />	<!-- Use this to only override the save game path. Do not forget to uncomment the entry! -->
 
 	<!-- Other technical settings -->
 	<property name="EACEnabled"						value="false"/>				<!-- Enables/Disables EasyAntiCheat -->
-	<property name="HideCommandExecutionLog"		value="0"/>					<!-- Hide logging of command execution. 0 = show everything, 1 = hide only from Telnet/ControlPanel, 2 = also hide from remote game clients, 3 = hide everything -->
+	<property name="HideCommandExecutionLog"		value="3"/>					<!-- Hide logging of command execution. 0 = show everything, 1 = hide only from Telnet/ControlPanel, 2 = also hide from remote game clients, 3 = hide everything -->
 	<property name="MaxUncoveredMapChunksPerPlayer"	value="131072"/>			<!-- Override how many chunks can be uncovered on the ingame map by each player. Resulting max map file size limit per player is (x * 512 Bytes), uncovered area is (x * 256 m²). Default 131072 means max 32 km² can be uncovered at any time -->
 	<property name="PersistentPlayerProfiles"		value="false" />			<!-- If disabled a player can join with any selected profile. If true they will join with the last profile they joined with -->
 
@@ -61,7 +61,7 @@
 	<property name="BlockDamagePlayer"				value="100" />				<!-- How much damage do players to blocks (percentage in whole numbers) -->
 	<property name="BlockDamageAI"					value="20" />				<!-- How much damage do AIs to blocks (percentage in whole numbers) -->
 	<property name="BlockDamageAIBM"				value="20" />				<!-- How much damage do AIs during blood moons to blocks (percentage in whole numbers) -->
-	<property name="XPMultiplier"					value="100" />				<!-- XP gain multiplier (percentage in whole numbers) -->
+	<property name="XPMultiplier"					value="80" />				<!-- XP gain multiplier (percentage in whole numbers) -->
 	<property name="PlayerSafeZoneLevel"			value="5" />				<!-- If a player is less or equal this level he will create a safe zone (no enemies) when spawned -->
 	<property name="PlayerSafeZoneHours"			value="8" />				<!-- Hours in world time this safe zone exists -->
 
@@ -89,19 +89,19 @@
 	<property name="BloodMoonEnemyCount"			value="14" />				<!-- The number of zombies spawned during blood moons per player. -->
 
 	<!-- Loot -->
-	<property name="LootAbundance"					value="55" />				<!-- percentage in whole numbers -->
-	<property name="LootRespawnDays"				value="30" />				<!-- days in whole numbers -->
-	<property name="AirDropFrequency"				value="72"/>				<!-- How often airdrop occur in game-hours, 0 == never -->
+	<property name="LootAbundance"					value="50" />				<!-- percentage in whole numbers -->
+	<property name="LootRespawnDays"				value="99" />				<!-- days in whole numbers -->
+	<property name="AirDropFrequency"				value="168"/>				<!-- How often airdrop occur in game-hours, 0 == never -->
 	<property name="AirDropMarker"					value="false"/>				<!-- Sets if a marker is added to map/compass for air drops. -->
 
 	<!-- Multiplayer -->
-	<property name="PartySharedKillRange"			value="100"/>				<!-- The distance you must be within to receive party shared kill xp and quest party kill objective credit. -->
+	<property name="PartySharedKillRange"			value="150"/>				<!-- The distance you must be within to receive party shared kill xp and quest party kill objective credit. -->
 	<property name="PlayerKillingMode"				value="0" />				<!-- Player Killing Settings (0 = No Killing, 1 = Kill Allies Only, 2 = Kill Strangers Only, 3 = Kill Everyone) -->
 
 	<!-- Land claim options -->
-	<property name="LandClaimCount"					value="1"/>					<!-- Maximum allowed land claims per player. -->
+	<property name="LandClaimCount"					value="2"/>					<!-- Maximum allowed land claims per player. -->
 	<property name="LandClaimSize"					value="42"/>				<!-- Size in blocks that is protected by a keystone -->
-	<property name="LandClaimDeadZone"				value="30"/>				<!-- Keystones must be this many blocks apart (unless you are friends with the other player) -->
+	<property name="LandClaimDeadZone"				value="90"/>				<!-- Keystones must be this many blocks apart (unless you are friends with the other player) -->
 	<property name="LandClaimExpiryTime"			value="14"/>				<!-- The number of days a player can be offline before their claims expire and are no longer protected -->
 	<property name="LandClaimDecayMode"				value="2"/>					<!-- Controls how offline players land claims decay. All claims have full protection for the first 24hrs. 0=Linear, 1=Exponential, 2=Full protection until claim is expired. -->
 	<property name="LandClaimOnlineDurabilityModifier"	value="8"/>				<!-- How much protected claim area block hardness is increased when a player is online. 0 means infinite (no damage will ever be taken). Default is 4x -->
