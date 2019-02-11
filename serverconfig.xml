@@ -70,7 +70,7 @@
 	<property name="DayNightLength"					value="90" />				<!-- real time minutes per in game day: 60 minutes -->
 	<property name="DayLightLength"					value="16" />				<!-- in game hours the sun shines per day: 18 hours day light per in game day -->
 	<property name="DropOnDeath"					value="0" />				<!-- 0 = everything, 1 = toolbelt only, 2 = backpack only, 3 = delete all -->
-	<property name="DropOnQuit"						value="1" />				<!-- 0 = nothing, 1 = everything, 2 = toolbelt only, 3 = backpack only -->
+	<property name="DropOnQuit"						value="0" />				<!-- 0 = nothing, 1 = everything, 2 = toolbelt only, 3 = backpack only -->
 	<property name="BedrollDeadZoneSize"			value="32"/>				<!-- Size of bedroll deadzone, no zombies will spawn inside this area, and any cleared sleeper volumes that touch a bedroll deadzone will not spawn after they've been cleared. -->
 
 	<!-- Performance related -->
@@ -84,7 +84,7 @@
 	<property name="ZombieMoveNight"				value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
 	<property name="ZombieFeralMove"				value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
 	<property name="ZombieBMMove"					value="3" />				<!-- 0-4 (walk, jog, run, sprint, nightmare) -->
-	<property name="BloodMoonFrequency"				value="12" />				<!-- What frequency (in days) should a blood moon take place -->
+	<property name="BloodMoonFrequency"				value="14" />				<!-- What frequency (in days) should a blood moon take place -->
 	<property name="BloodMoonRange"					value="4" />				<!-- How many days can the actual blood moon day randomly deviate from the above setting. Setting this to 0 makes blood moons happen exactly each Nth day as specified in BloodMoonFrequency -->
 	<property name="BloodMoonEnemyCount"			value="14" />				<!-- The number of zombies spawned during blood moons per player. -->
 
@@ -92,10 +92,10 @@
 	<property name="LootAbundance"					value="50" />				<!-- percentage in whole numbers -->
 	<property name="LootRespawnDays"				value="99" />				<!-- days in whole numbers -->
 	<property name="AirDropFrequency"				value="168"/>				<!-- How often airdrop occur in game-hours, 0 == never -->
-	<property name="AirDropMarker"					value="false"/>				<!-- Sets if a marker is added to map/compass for air drops. -->
+	<property name="AirDropMarker"					value="true"/>				<!-- Sets if a marker is added to map/compass for air drops. -->
 
 	<!-- Multiplayer -->
-	<property name="PartySharedKillRange"			value="150"/>				<!-- The distance you must be within to receive party shared kill xp and quest party kill objective credit. -->
+	<property name="PartySharedKillRange"				value="125"/>				<!-- The distance you must be within to receive party shared kill xp and quest party kill objective credit. -->
 	<property name="PlayerKillingMode"				value="0" />				<!-- Player Killing Settings (0 = No Killing, 1 = Kill Allies Only, 2 = Kill Strangers Only, 3 = Kill Everyone) -->
 
 	<!-- Land claim options -->
