@@ -73,17 +73,20 @@
 				<effect_description level="5" desc_key="perkAdvancedEngineeringRank5Desc"/>
 			</effect_group>
 		</perk>
-
+		</append>
+<!--
+		<append xpath="/progression/attributes">
 		<attribute name="attFortitude" name_key="attFortitudeName" desc_key="attFortitudeDesc" icon="ui_game_symbol_add">
 			<effect_group>
-				<passive_effect name="HealthMax" operation="base_set" value="250" level="11"/>
-				<passive_effect name="WaterMax" operation="base_set" value="250" level="11"/>
+				<passive_effect name="HealthMax" operation="base_set" value="250" level="10"/>
+				<passive_effect name="WaterMax" operation="base_set" value="250" level="10"/>
 			</effect_group>
 		</attribute>
 		<attribute name="attAgility" name_key="attAgilityName" desc_key="attAgilityDesc" icon="ui_game_symbol_agility">
 			<effect_group>
-				<passive_effect name="StaminaMax" operation="base_set" value="250" level="11"/>
+				<passive_effect name="StaminaMax" operation="base_set" value="250" level="10"/>
 			</effect_group>
 		</attribute>
 	</append>
+	-->
 </configs>

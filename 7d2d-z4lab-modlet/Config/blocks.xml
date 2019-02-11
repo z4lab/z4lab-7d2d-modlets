@@ -268,8 +268,6 @@
 	<set xpath="/blocks/block[@name='goreBlockAnimal']/drop[@event='Destroy' and @name='resourceFemur']/@count">2,3</set>
 	<set xpath="/blocks/block[@name='goreBlockHumanCorpse']/drop[@event='Destroy' and @name='resourceFemur']/@count">2,3</set>
 	<set xpath="/blocks/block[@name='goreBlockHumanBones']/drop[@event='Destroy' and @name='resourceFemur']/@count">2,3</set>
-	<set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest' and @name='resourceFemur']/@prob">0.6</set>
-	<set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest' and @name='resourceFemur']/@count">2,3</set>
 	<!-- Tree mods for bonus wood and the chance of a birds nest within the tree -->
 	<append xpath="/blocks/block[@name='treeBurntMaple01']">	
 		<drop event="Destroy" name="resourceWood" count="30" tag="oreWoodDestroy"/>
