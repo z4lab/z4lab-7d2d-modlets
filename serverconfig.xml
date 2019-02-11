@@ -71,7 +71,7 @@
 	<property name="DayLightLength"					value="16" />				<!-- in game hours the sun shines per day: 18 hours day light per in game day -->
 	<property name="DropOnDeath"					value="0" />				<!-- 0 = everything, 1 = toolbelt only, 2 = backpack only, 3 = delete all -->
 	<property name="DropOnQuit"						value="1" />				<!-- 0 = nothing, 1 = everything, 2 = toolbelt only, 3 = backpack only -->
-	<property name="BedrollDeadZoneSize"			value="22"/>				<!-- Size of bedroll deadzone, no zombies will spawn inside this area, and any cleared sleeper volumes that touch a bedroll deadzone will not spawn after they've been cleared. -->
+	<property name="BedrollDeadZoneSize"			value="32"/>				<!-- Size of bedroll deadzone, no zombies will spawn inside this area, and any cleared sleeper volumes that touch a bedroll deadzone will not spawn after they've been cleared. -->
 
 	<!-- Performance related -->
 	<property name="MaxSpawnedZombies"				value="80"/>				<!-- Making this number too large (more than about 80) may cause servers to run at poor framerates which will effect lag and play quality for clients. -->
