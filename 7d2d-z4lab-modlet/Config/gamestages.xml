@@ -1,12 +1,12 @@
 <configs>
 	<!-- general gamestage settings / made harder -->
-	<set xpath="gamestages/config/@daysAliveChangeWhenKilled">1</set>
-	<set xpath="gamestages/config/@scavengerGameDifficultyBonus">1.5</set>
-	<set xpath="gamestages/config/@adventurerGameDifficultyBonus">2</set>
-	<set xpath="gamestages/config/@nomadGameDifficultyBonus">2.5</set>
-	<set xpath="gamestages/config/@warriorGameDifficultyBonus">3</set>
-	<set xpath="gamestages/config/@survivalistGameDifficultyBonus">3.5</set>
-	<set xpath="gamestages/config/@insaneGameDifficultyBonus">4</set>
+	<set xpath="gamestages/config/@daysAliveChangeWhenKilled">1.5</set>
+	<set xpath="gamestages/config/@scavengerGameDifficultyBonus">2</set>
+	<set xpath="gamestages/config/@adventurerGameDifficultyBonus">2.2</set>
+	<set xpath="gamestages/config/@nomadGameDifficultyBonus">2.3</set>
+	<set xpath="gamestages/config/@warriorGameDifficultyBonus">2.4</set>
+	<set xpath="gamestages/config/@survivalistGameDifficultyBonus">2.5</set>
+	<set xpath="gamestages/config/@insaneGameDifficultyBonus">3</set>
 
 	<!-- <set xpath="gamestages/config/@startingWeight">1</set> -->
 	<set xpath="gamestages/config/@diminishingReturns">0.1</set>
