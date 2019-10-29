@@ -1,4 +1,6 @@
 <configs>
+<!-- needs to be reworked for A18
+
 	<!-- removed perks -->
 	<remove xpath="/progression/perks/perk[@name='perkPackMule']" />
 	<remove xpath="/progression/perks/perk[@name='perkParkour']" />
@@ -74,7 +76,7 @@
 			</effect_group>
 		</perk>
 		</append>
-<!--
+
 		<append xpath="/progression/attributes">
 		<attribute name="attFortitude" name_key="attFortitudeName" desc_key="attFortitudeDesc" icon="ui_game_symbol_add">
 			<effect_group>
