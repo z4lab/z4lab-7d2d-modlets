@@ -1,5 +1,5 @@
 <configs>
-	<!-- replaces vultures with soliders, due to server performance -->
+	<!-- replaces vultures with soliders, due to server performance, still a problem in A18 -->
 	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieVulture']/@name">zombieSoldier</set>
 	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieVultureRadiated']/@name">zombieSoldier</set>
 </configs>

@@ -1,7 +1,7 @@
 <configs>
 	<!-- general gamestage settings / made harder -->
-	<set xpath="gamestages/config/@daysAliveChangeWhenKilled">1.5</set>
-	<set xpath="gamestages/config/@scavengerGameDifficultyBonus">2</set>
+	<set xpath="gamestages/config/@daysAliveChangeWhenKilled">1</set>
+	<set xpath="gamestages/config/@scavengerGameDifficultyBonus">1.8</set>
 	<set xpath="gamestages/config/@adventurerGameDifficultyBonus">2.2</set>
 	<set xpath="gamestages/config/@nomadGameDifficultyBonus">2.3</set>
 	<set xpath="gamestages/config/@warriorGameDifficultyBonus">2.4</set>

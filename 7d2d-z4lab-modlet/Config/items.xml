@@ -196,6 +196,7 @@
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">200</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='40']/@value">100</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='15']/@value">100</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='10']/@value">50</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">50</set>
 	<!-- Water from faucet -->
 	<append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
