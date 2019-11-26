@@ -122,29 +122,6 @@
 	<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='foodRottingFlesh'][@tag='butcherHarvest']/@count">8</set>
 </entityclasses>
 
-<entitygroups>
-	<!-- reduce vultre spawn rate -->
-	<set xpath="/entitygroups/entitygroup/entity[@name='animalZombieVulture']/@prob">0.1</set>
-	<set xpath="/entitygroups/entitygroup/entity[@name='animalZombieVultureRadiated']/@prob">0.1</set>
-</entitygroups>
-
-<recipes>
-	<!-- change required meat for cooking -->
-	<set xpath="/recipes/recipe/ingredient[@name='foodRawMeat' and @count='5']/@count">4</set>
-	<set xpath="/recipes/recipe/ingredient[@name='foodRawMeat' and @count='10']/@count">8</set>	
-</recipes>
-
-<progression>
-	<!-- reduced points scaling for level requirements -->
-	<set xpath="/progression/attributes/@cost_multiplier_per_level">1.05</set>
-</progression>
-
-<materials>
-	<!-- More XP for mining and resources, default values are now higher than this -->
-	<set xpath="/materials/material[@id='MresourceWood']/property[@name='Experience']/@value">1.21</set>
-	<set xpath="/materials/material[@id='Mstone']/property[@name='Experience']/@value">1.21</set>
-	<set xpath="/materials/material[@id='MresourceClayLump']/property[@name='Experience']/@value">.95</set>
-</materials>
 
 <blocks>
 	<set xpath="/blocks/block[@name='bodyBagBlack']/drop[@event='Harvest' and @name='resourceFemur']/@prob">0.6</set>

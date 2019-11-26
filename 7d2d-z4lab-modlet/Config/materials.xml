@@ -2,4 +2,9 @@
 	<!-- change stability of gravel/sand/dirt -->
 	<set xpath="/materials/material[@id='Mgravel']/property[@name='stability_glue']/@value">30</set>
 	<set xpath="/materials/material[@id='Msand']/property[@name='stability_glue']/@value">30</set>
+
+	<!-- More XP for mining and resources, default values are now higher than this -->
+	<set xpath="/materials/material[@id='MresourceWood']/property[@name='Experience']/@value">1.21</set>
+	<set xpath="/materials/material[@id='Mstone']/property[@name='Experience']/@value">1.21</set>
+	<set xpath="/materials/material[@id='MresourceClayLump']/property[@name='Experience']/@value">.95</set>
 </configs>

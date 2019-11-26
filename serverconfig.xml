@@ -11,12 +11,12 @@
 
 	<!-- Networking -->
 	<property name="ServerPort"						value="26900"/>				<!-- Port you want the server to listen on. -->
-	<property name="ServerVisibility"				value="1"/>					<!-- Visibility of this server: 2 = public, 1 = only shown to friends, 0 = not listed. As you are never friend of a dedicated server setting this to "1" will only work when the first player connects manually by IP. -->
+	<property name="ServerVisibility"				value="0"/>					<!-- Visibility of this server: 2 = public, 1 = only shown to friends, 0 = not listed. As you are never friend of a dedicated server setting this to "1" will only work when the first player connects manually by IP. -->
 	<property name="ServerDisabledNetworkProtocols"	value="SteamNetworking"/>	<!-- Networking protocols that should not be used. Separated by comma. Possible values: LiteNetLib, SteamNetworking. Dedicated servers should disable SteamNetworking if there is no NAT router in between your users and the server or when port-forwarding is set up correctly -->
-	<property name="ServerMaxWorldTransferSpeedKiBs" value="1024"/>				<!-- Maximum (!) speed in kiB/s the world is transferred at to a client on first connect if it does not have the world yet. Maximum is about 1300 kiB/s, even if you set a higher value. -->
+	<property name="ServerMaxWorldTransferSpeedKiBs" value="1200"/>				<!-- Maximum (!) speed in kiB/s the world is transferred at to a client on first connect if it does not have the world yet. Maximum is about 1300 kiB/s, even if you set a higher value. -->
 
 	<!-- Slots -->
-	<property name="ServerMaxPlayerCount"			value="8"/>					<!-- Maximum Concurrent Players -->
+	<property name="ServerMaxPlayerCount"			value="12"/>					<!-- Maximum Concurrent Players -->
 	<property name="ServerReservedSlots"			value="0"/>					<!-- Out of the MaxPlayerCount this many slots can only be used by players with a specific permission level -->
 	<property name="ServerReservedSlotsPermission"	value="100"/>				<!-- Required permission level to use reserved slots above -->
 	<property name="ServerAdminSlots"				value="2"/>					<!-- This many admins can still join even if the server has reached MaxPlayerCount -->
@@ -93,7 +93,7 @@
 	<property name="BloodMoonEnemyCount"			value="12" />				<!-- The number of zombies spawned during blood moons per player. -->
 
 	<!-- Loot -->
-	<property name="LootAbundance"					value="65" />				<!-- percentage in whole numbers -->
+	<property name="LootAbundance"					value="75" />				<!-- percentage in whole numbers -->
 	<property name="LootRespawnDays"				value="999" />				<!-- days in whole numbers -->
 	<property name="AirDropFrequency"				value="168"/>				<!-- How often airdrop occur in game-hours, 0 == never -->
 	<property name="AirDropMarker"					value="false"/>				<!-- Sets if a marker is added to map/compass for air drops. -->

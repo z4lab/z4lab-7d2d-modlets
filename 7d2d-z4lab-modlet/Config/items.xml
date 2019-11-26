@@ -188,16 +188,16 @@
 	<!-- stack size changes -->
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='20000']/@value">24000</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='6000']/@value">12000</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='1200']/@value">2400</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='1000']/@value">2400</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">1500</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='250']/@value">500</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='128']/@value">250</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">200</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='40']/@value">100</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='15']/@value">100</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='10']/@value">50</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">50</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1200']/@value">2500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1000']/@value">2500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">2500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='250']/@value">750</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='128']/@value">500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">500</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='40']/@value">200</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='15']/@value">150</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='10']/@value">150</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">100</set>
 	<!-- Water from faucet -->
 	<append xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']">
 		<property name="Focused_blockname_6" value="Faucet Small"/>

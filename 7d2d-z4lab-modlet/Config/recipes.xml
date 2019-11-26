@@ -1,4 +1,7 @@
 <configs>
+	<!-- change required meat for cooking -->
+	<set xpath="/recipes/recipe/ingredient[@name='foodRawMeat' and @count='5']/@count">4</set>
+	
 	<append xpath="/recipes" >
 		<!-- Spikes -->
 		<recipe name="woodLogSpike1" count="1">
