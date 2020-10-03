@@ -1,4 +1,4 @@
 <configs>
 	<!-- set how many skill points you get after completing your the basic survival quests, default in A18 is "4" -->
-	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">8</set>
+	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">75</set>
 </configs>

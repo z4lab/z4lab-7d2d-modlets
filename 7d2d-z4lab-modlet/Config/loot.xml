@@ -1,8 +1,4 @@
 <configs>
-	<!-- vehicleMotorcycle storage -->
-	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,7</set>
-	<!-- vehicle4x4Truck storage -->
-	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,9</set>
 	<!-- Make player dropped bags bigger to accomodate new size -->
 	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">9,9</set>
 </configs>

@@ -13,17 +13,6 @@
 	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
 	<!-- Chemistry station crafting slots -->
 	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
-	<!-- compass -->
-	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='compass']/window[@name='windowCompass']"/>
-	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
-		<window name="S420windowCompass" /> 
-	</append>
-	<!-- UI left and right from toolbelt -->
-	<append xpath="/xui/ruleset/window_group[@name='toolbelt']">
-		<window name="rightSideHUD" />
-		<window name="pzLeftBars" />
-		<window name="S420ActiveBuffsWindow" anchor="LeftBottom" />
-	</append>
 	<!-- Wall Oven -->
 	<append xpath="/xui/ruleset">
 		<window_group name="workstation_Wall Oven" controller="XUiC_WorkstationWindowGroup">

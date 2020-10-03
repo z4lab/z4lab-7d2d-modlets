@@ -13,8 +13,4 @@
 	<set xpath="/entity_classes/entity_class[@name='EntityLootContainerBandit']/property[@name='TimeStayAfterDeath']/@value">1200</set>
 	<!-- Increase loot drop chance -->
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']/@value">0.08</set>
-	<!-- Increase bone harvesting -->
-	<set xpath="/entity_classes/entity_class/drop[@event='Harvest' and @tag='butcherHarvest']/@count">3,5</set>
-	<!-- How long the Z body remains -->
-	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">20</set>
 </configs>

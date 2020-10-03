@@ -9,30 +9,7 @@
 	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='motorTorqueMinQ']/@value">6000</set>
 	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='motorTorqueMaxQ']/@value">9000</set>	
 	<set xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='brakeTorque']/@value">9000</set>
-	<!-- steering rate change -->
+	<!-- steering rate change 
 	<set xpath="/vehicles/vehicle/property[@name='steerRate']/@value">160</set>
-	<!-- add second seat to motorcycle -->
-	<append xpath="vehicles/vehicle[@name='vehicleMotorcycle']">
-		<property class="seat1">
-			<property name="position" value="0, .1, -.701"/>
-			<property name="rotation" value="0, 0, 0"/>
-			<property name="exit" value=".9,0,0 ~ -.9,0,0 ~ 0,0,1.5 ~ 0,0,-1.6 ~ 0,-1.5,0"/>
-		</property>
-	</append>
-	<!-- add third seat to truck -->
-	<append xpath="vehicles/vehicle[@name='vehicle4x4Truck']">
-		<property class="seat2">
-			<property name="position" value="-.4, .56, -2.46"/>
-			<property name="rotation" value="-25, 180, 0"/>
-			<property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
-		</property>
-	</append>
-	<!-- add fourth seat to truck -->
-	<append xpath="vehicles/vehicle[@name='vehicle4x4Truck']">
-		<property class="seat3">
-			<property name="position" value=".4, .56, -2.46"/>
-			<property name="rotation" value="-25, 180, 0"/>
-			<property name="exit" value="1.6,0,0 ~ -1.6,0,-1 ~ .4,0,-2.8 ~ .4,0,2.6 ~ .4,2.1,0"/>
-		</property>
-	</append>
+	-->
 </configs>
