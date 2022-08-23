@@ -1,9 +1,0 @@
-<configs>
-	<!-- replaces vultures with soliders, due to server performance, still a problem in A19 -->
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieVulture']/@name">zombieSoldier</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[@name='animalZombieVultureRadiated']/@name">zombieSoldier</set>
-
-	<!-- also change spawnrate of them -->
-	<set xpath="/entitygroups/entitygroup/entity[@name='animalZombieVulture']/@prob">0.3</set>
-	<set xpath="/entitygroups/entitygroup/entity[@name='animalZombieVultureRadiated']/@prob">0.3</set>
-</configs>

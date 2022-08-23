@@ -1,0 +1,18 @@
+<configs>
+	<!-- Base building tools upgrade speed up -->
+	<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']/@value">0.15</set>
+	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Delay']/@value">0.42</set>
+	<!-- stack size changes -->
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='20000']/@value">22222</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='6000']/@value">12345</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1200']/@value">4242</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1000']/@value">4242</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">4242</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='250']/@value">555</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='150']/@value">555</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">252</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='40']/@value">252</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='15']/@value">101</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='10']/@value">101</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">101</set>
+</configs>

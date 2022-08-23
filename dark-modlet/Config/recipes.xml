@@ -1,20 +1,5 @@
 <configs>
-	<!-- change required meat for cooking -->
-	<set xpath="/recipes/recipe/ingredient[@name='foodRawMeat' and @count='5']/@count">4</set>
-	
 	<append xpath="/recipes" >
-		<!-- Spikes -->
-		<recipe name="woodLogSpike1" count="1">
-			<ingredient name="resourceWood" count="12"/>
-		</recipe>
-		<recipe name="scrapIronLogSpike4" count="1">
-			<ingredient name="resourceScrapIron" count="20"/>
-		</recipe>
-		<!-- Steel polish -->		
-		<recipe name="resourceSteelPolish" count="10" craft_area="chemistryStation" craft_time = "15">
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="1"/>
-		</recipe>
 		<!-- wall Oven -->
 		<recipe name="Wall Oven" count="1" >
 			<ingredient name="resourceForgedIron" count="10" />
@@ -22,20 +7,6 @@
 			<ingredient name="resourceElectricParts" count="4" />
 			<ingredient name="resourceMetalPipe" count="2" />
 			<ingredient name="glassIndustrialCTRPlate" count="2" />
-		</recipe>
-		<!-- Faucet Small -->
-		<recipe name="Faucet Small" count="1" >
-			<ingredient name="resourceMetalPipe" count="20"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceScrapIron" count="5"/>
-			<ingredient name="bucketRiverWater" count="5"/>
-		</recipe>
-		<!-- Faucet -->
-		<recipe name="Faucet" count="1" >
-			<ingredient name="resourceMetalPipe" count="20"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceScrapIron" count="5"/>
-			<ingredient name="bucketRiverWater" count="5"/>
 		</recipe>
 		<!-- Jail Door -->
 		<recipe name="Jail Prision" count="1" craft_area="workbench">
@@ -58,10 +29,6 @@
 		<!-- Concrete Barrier Door -->
 		<recipe name="Barrier Concrete" count="1" craft_area="cementMixer">
 			<ingredient name="resourceConcreteMix" count="50"/>
-		</recipe>
-		<!-- Security Plate -->
-		<recipe name="Security Plate" count="1" craft_area="workbench">
-     		<ingredient name="resourceForgedIron" count="15"/>
 		</recipe>
 	</append>
 </configs>

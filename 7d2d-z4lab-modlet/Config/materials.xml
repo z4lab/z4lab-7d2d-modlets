@@ -1,5 +1,0 @@
-<configs>
-	<!-- change stability of gravel/sand/dirt -->
-	<set xpath="/materials/material[@id='Mgravel']/property[@name='stability_glue']/@value">30</set>
-	<set xpath="/materials/material[@id='Msand']/property[@name='stability_glue']/@value">30</set>
-</configs>

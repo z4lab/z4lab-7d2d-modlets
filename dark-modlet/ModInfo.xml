@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="dark" />
+        <Description value="[dark] rebalancing modlet" />
+        <Author value="totles" />
+        <Version value="v20.6-alpha" />
+    </ModInfo>
+</xml>

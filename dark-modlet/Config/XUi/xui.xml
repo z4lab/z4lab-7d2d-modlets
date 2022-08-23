@@ -1,6 +1,8 @@
  <configs>
- 	<!-- forge with 3 input slots -->
-	<set xpath="xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">S420windowForgeInput</set>
+ 	<xooGHOSToox>
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">BigwindowForgeInput</set>
+</xooGHOSToox>
+
 	<!-- Crafting slots -->
 	<set xpath="/xui/ruleset[@name='default']/window_group[@name='crafting']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
 	<!-- Campfire crafting slots -->
