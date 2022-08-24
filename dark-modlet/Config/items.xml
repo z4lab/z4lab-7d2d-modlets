@@ -4,15 +4,22 @@
 	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Delay']/@value">0.42</set>
 	<!-- stack size changes -->
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='20000']/@value">22222</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='6000']/@value">12345</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='1200']/@value">4242</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='1000']/@value">4242</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">4242</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='10000']/@value">22222</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='6000']/@value">12222</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1200']/@value">4444</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='1000']/@value">2222</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='500']/@value">1555</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='300']/@value">555</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='250']/@value">555</set>
 	<set xpath="/items/item/property[@name='Stacknumber' and @value='150']/@value">555</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">252</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='40']/@value">252</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='15']/@value">101</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='10']/@value">101</set>
-	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">101</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='125']/@value">555</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='100']/@value">555</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='75']/@value">255</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='50']/@value">255</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='40']/@value">255</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='25']/@value">155</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='20']/@value">155</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='15']/@value">155</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='10']/@value">155</set>
+	<set xpath="/items/item/property[@name='Stacknumber' and @value='5']/@value">155</set>
 </configs>

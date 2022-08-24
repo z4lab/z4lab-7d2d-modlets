@@ -1,7 +1,6 @@
 <configs>
 	<!-- dont take fall damage on hay bales -->
 	<set xpath="/blocks/block[@name='hayBaleSquare']/property[@name='FallDamage']/@value">0.0</set>
-	<set xpath="/blocks/block[@name='hayBaleRound']/property[@name='FallDamage']/@value">0.0</set>
 	<!-- change movement speed on wood ladders -->
 	<append xpath="/blocks/block[@name='ladderWood']">
 		<property name="MovementFactor" value="1.4"/>
@@ -14,23 +13,25 @@
 	<append xpath="/blocks/block[@name='ladderSteel']">
 		<property name="MovementFactor" value="1.6"/>
 	</append>
-<block name="Wall Oven">
-	<property name="Class" value="Campfire"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="Texture" value="346,345,341,345,262,345"/>
-	<property name="IsTerrainDecoration" value="true" />
-	<property name="ParticleName" value="campfire" />
-	<property name="ParticleOffset" value="0.7,0,0.7" />
-	<property name="Stacknumber" value="1" />
-	<property name="HeatMapStrength" value="2"/>
-	<property name="HeatMapTime" value="1200"/>
-	<property name="HeatMapFrequency" value="25"/>
-	<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger"/>
-	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
-	<property class="Workstation">
-	<property name="CraftingAreaRecipes" value="campfire"/>
-	<property name="Modules" value="tools,output,fuel,input"/>
-	<property name="Collide" value="melee,bullet,arrow,rocket" />
+
+<append xpath="/blocks">
+	<block name="Wall Oven">
+		<property name="Class" value="Campfire"/>
+		<property name="Material" value="Mmetal"/>
+		<property name="Texture" value="346,345,341,345,262,345"/>
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="ParticleName" value="campfire" />
+		<property name="ParticleOffset" value="0.7,0,0.7" />
+		<property name="Stacknumber" value="1" />
+		<property name="HeatMapStrength" value="2"/>
+		<property name="HeatMapTime" value="1200"/>
+		<property name="HeatMapFrequency" value="25"/>
+		<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger"/>
+		<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
+		<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="campfire"/>
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
 	</property>
 	<property class="RepairItems"> 
 		<property name="mechanicalParts" value="1" /> 
@@ -136,4 +137,5 @@
 	<property name="SortOrder1" value="7060"/>
 	<property name="SortOrder2" value="0051"/> <!-- SortDoors -->
 </block>
+</append>
 </configs>

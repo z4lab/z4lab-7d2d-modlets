@@ -1,8 +1,7 @@
  <configs>
- 	<xooGHOSToox>
+ 	
 	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">BigwindowForgeInput</set>
-</xooGHOSToox>
-
+	
 	<!-- Wall Oven -->
 	<append xpath="/xui/ruleset">
 		<window_group name="workstation_Wall Oven" controller="XUiC_WorkstationWindowGroup">

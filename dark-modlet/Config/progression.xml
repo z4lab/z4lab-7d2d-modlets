@@ -1,6 +1,6 @@
 <configs>
 <!-- reduced points scaling for level requirements, default 1.14 -->
-<set xpath="/progression/attributes/@cost_multiplier_per_level">1.1</set>
+<!-- <set xpath="/progression/attributes/@cost_multiplier_per_level">1.14</set> -->
 <!-- removed Pack Mule perk -->
 	<remove xpath="/progression/perks/perk[@name='perkPackMule']" />
 	<remove xpath="/progression/perks/perk[@name='perkParkour']" />

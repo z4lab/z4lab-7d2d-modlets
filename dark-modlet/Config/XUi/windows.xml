@@ -1,4 +1,4 @@
-<xooGHOSToox>
+<configs>
 	<append xpath="/windows">
 		<window name="BigwindowForgeInput" width="228" height="279" panel="Right"
 			controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
@@ -25,4 +25,4 @@
 			</rect>
 		</window>
 	</append>
-</xooGHOSToox>
+</configs>
